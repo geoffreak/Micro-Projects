@@ -1,0 +1,5 @@
+Simple MIPS processor compiler/decompiler
+
+Files of interest:
+- cmp.php: A PHP MIPS Assembly compiler
+- fail.php: A very simple MIPS decompiler
