@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Huffman Coding by Joshua D.</title>
+</head>
+
+<body>
+<h1>Program Output:</h1>
+<script type="text/javascript">
+var realConsole = console;
+var console = {};
+console.log = function (data)
+{
+	if (realConsole) realConsole.log(data);
+	var string = "";
+	if (typeof data == 'object')
+	{
+		string += '{ '
+		for (var key in data)
+		{
+			if (string != '{ ')
+				string += ', ';
+			string += key + ': ' + data[key];
+		}
+		string += ' }'
+	}
+	else 
+		string = data;
+	document.write(string + '<br / >');
+}
+</script>
+<script type="text/javascript" src="huffman.js"></script>
+</body>
+</html>
